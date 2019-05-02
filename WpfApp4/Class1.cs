@@ -15,7 +15,7 @@ namespace WpfApp4
         private double price = 0;
         private double tax;
         private double totalPrice = 0;
-        private string notes;//use this for things like -no lettuce, no tomato
+        private string notes;  //use this for things like -no lettuce, no tomato such special notes
         private int orderNumber;
         private static double taxRate = .1;
 
