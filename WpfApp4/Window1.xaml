@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp4.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Background="Gray"
+        WindowStartupLocation="CenterScreen"
+        Title="Meal Choice" Height="300" Width="500">
+    <Grid>
+        <Button Name="breakfast" Content="&#xD;&#xA;Breakfast&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="32,102,0,0" Click="breakfast_Click" Height="57"/>
+        <Button Name="dinner" Content="Lunch/Dinner" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="182,102,0,0" Click="dinner_Click" Height="57"/>
+        <Button Name="Finish" Content="Finish Ordering" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="333,102,0,0" Height="57" RenderTransformOrigin="0.516,0.36" Click="Finish_Click" />
+
+    </Grid>
+</Window>

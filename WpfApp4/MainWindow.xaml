@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Background="Gray"
+        WindowStartupLocation="CenterScreen"
+        Title="Andrew's POS POS sytem" Height="350" Width="525">
+    <Grid>
+        <Button Name="Place" Content="Place an Order" HorizontalAlignment="Left" Margin="75,215,0,0" VerticalAlignment="Top" Width="120" Height="64" Click="Place_Click"/>
+        <Button Name="Recent" Content="Recent Orders" HorizontalAlignment="Left" Margin="200,215,0,0" VerticalAlignment="Top" Width="121" Height="64" Click="Recent_Click"/>
+        <Button Name="close" Content="Close &#xD;&#xA;Program" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Margin="326,215,0,0" Height="64" Click="close_Click"/>
+
+    </Grid>
+</Window>

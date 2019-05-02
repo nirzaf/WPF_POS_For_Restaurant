@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp4.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Background="gray"
+        WindowStartupLocation="CenterOwner"
+        Title="Dinner" Height="400" Width="750">
+    <Grid TextBlock.TextAlignment="Left">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="508,25,4,19" RenderTransformOrigin="0.5,0.5">
+            <ScrollViewer.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.083"/>
+                    
+                    <TranslateTransform/>
+                </TransformGroup>
+                
+            </ScrollViewer.RenderTransform>
+            <TextBlock  Name="Receipt" TextWrapping="WrapWithOverflow" HorizontalAlignment="Left" VerticalAlignment="Top" Background="White"  Grid.ColumnSpan="2" />
+        </ScrollViewer>
+        <Button Name="Steak" Content="Steak" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="21,153,0,0" Height="63" Click="Steak_Click"/>
+        <Button  Name="Salmon" Content="Grilled &#xD;&#xA; Salmon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="21,222,0,0" Height="63" Click="Salmon_Click"/>
+        <TextBox Name="notesbox" HorizontalAlignment="Left" Height="30" Margin="300,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,1.87"/>
+        <Label Content="Notes:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="247,316,0,0" Width="53" Height="30"/>
+        <Button Name="Chicken_Caesar" Content="Chicken &#xD;&#xA; Caesar&#xD;&#xA; Salad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="110,153,0,0" Height="63" Click="Chicken_Caesar_Click"/>
+        <Button  Name="Chicken" Content="Chicken" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="110,222,0,0" Height="63" Click="Chicken_Click"/>
+        <Button Name="Burger" Content="Burger" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="21,18,0,0" Height="58" Click="Burger_Click"/>
+        <Button  Name="ChickenSand" Content="Chicken&#xD;&#xA;Sandwich" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="21,81,0,0" Height="66" Click="ChickenSand_Click"/>
+        <Button Name="Chicken_fingers" Content="Chicken &#xD;&#xA;Fingers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="108,18,0,0" Height="58" Click="Chicken_fingers_Click"/>
+        <Button  Name="SandS" Content="Soup &#xD;&#xA;and&#xD;&#xA;Salad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="108,81,0,0" Height="66" Click="SandS_Click"/>
+        <ListBox Name="currentOrder" HorizontalAlignment="Left" Height="240" VerticalAlignment="Top" Width="199" Margin="246,45,0,0" RenderTransformOrigin="0.784,0.561"/>
+        <Button Name="Delete" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Margin="10,316,0,0" Click="Delete_Click" Height="26"/>
+        <Button Name="done" Content="Done" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="121,316,0,0" Click="done_Click" Height="26"/>
+        <Label Content="Order:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,50,0,0" Width="50" Height="26"/>
+
+
+
+        <Label Content="Receipt" HorizontalAlignment="Left" Margin="516,0,0,0" VerticalAlignment="Top" Width="93" Height="26"/>
+
+    </Grid>
+
+</Window>
